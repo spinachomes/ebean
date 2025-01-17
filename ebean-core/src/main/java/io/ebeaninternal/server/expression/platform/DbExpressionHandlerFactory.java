@@ -30,6 +30,8 @@ public final class DbExpressionHandlerFactory {
         return new SqlServerDbExpression();
       case HANA:
         return new HanaDbExpression();
+      case DM8:
+        return new Dm8DbExpression();
       default:
         return new BasicDbExpression();
     }
